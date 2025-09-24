@@ -1,3 +1,3 @@
 Hello Github, this is my first repository.
-Assalamualaikum
+Assalamualaikum,Waalaikumsalam
 Fitur 1
