@@ -6,14 +6,11 @@ import java.util.Scanner;
         System.out.println("===Cetak KRS SIAKAD==");
         System.out.println("Apakah Ukt Sudah Lunas ? (true/false): ");
         boolean uktLunas = sc.nextBoolean();
-         
-        if (uktLunas) {
-            System.out.println("Pembayaran Ukt Lunas");
-            System.out.println("Silahkan Cetak KRS dan Minta Tanda Tangan DPA");
-        } else {
-            System.out.println("Pembayaran UKT Belum Lunas");
-            System.out.println("Silakan Lunasi UKT Terlebih Dahulu");
+         String hasil=(uktLunas)
+            ? "Pembayaran UKT Terverivikasi \n Silahkan Cetak KRS dan Minta tanda tangan DPA "
+            : "Registrasi ditolak. Silakan lunasi UKT terlebih dahulu";
+            System.out.println(hasil);
             
         }
     }
- }
+ 
