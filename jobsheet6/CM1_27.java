@@ -18,6 +18,9 @@ public class CM1_27 {
         int nilaiUts1;
         System.out.println("Masukkan Nilai UTS =");
         nilaiUts1 = sc.nextInt();
+        int nilaiKuiz1;
+        System.out.println("Masukkan NIilai Kuiz =");
+        nilaiKuiz1 = sc.nextInt();
         int nilaiUas1;
         System.out.println("Masukan Nilai UAS =");
         nilaiUas1 = sc.nextInt();
@@ -30,6 +33,9 @@ public class CM1_27 {
         int nilaiUts2;
         System.out.println("Masukkan Nilai UTS =");
         nilaiUts2 = sc.nextInt();
+        int nilaiKuiz2;
+        System.out.println("Masukkan NIilai Kuiz =");
+        nilaiKuiz2 = sc.nextInt();
         int nilaiUas2;
         System.out.println("==Masukan Nilai UAS ==");
         nilaiUas2 = sc.nextInt();
@@ -39,8 +45,8 @@ public class CM1_27 {
 
         // Membuat Rumus Nilai Akhir
         double nilaiAkhir1, nilaiAkhir2;
-        nilaiAkhir1 = nilaiUts1 * 0.30 + nilaiUas1 * 0.40 + nilaiTugas1 * 0.30;
-        nilaiAkhir2 = nilaiUts2 * 0.30 + nilaiUas2 * 0.40 + nilaiTugas2 * 0.30;
+        nilaiAkhir1 = nilaiUts1 * 0.30 + nilaiUas1 * 0.40 + nilaiTugas1 * 0.30 +nilaiKuiz1 *0.10;
+        nilaiAkhir2 = nilaiUts2 * 0.30 + nilaiUas2 * 0.40 + nilaiTugas2 * 0.30 +nilaiKuiz2 *0.10;
 
         // Menentukan Nilai Huruf Mata kuliah 1
         String nilaiHuruf1;
@@ -115,21 +121,23 @@ public class CM1_27 {
         System.out.println("==Mata Kuliah==");
         System.out.println("1.Algoritma Dan Pemprograman");
         System.out.println("UTS =" + nilaiUts1);
+        System.out.println("Nilai Kuiz =" +nilaiKuiz1);
         System.out.println("UAS =" + nilaiUas1);
-        System.out.println("Tugas" + nilaiTugas1);
+        System.out.println("Tugas =" + nilaiTugas1);
         System.out.println("Nilai Akhir =" + nilaiAkhir1);
         System.out.println("Nilai Huruf =" + nilaiHuruf1);
         System.out.println("2.Struktur Data");
         System.out.println("UTS =" + nilaiUts2);
+        System.out.println("Nilai Kuiz = " +nilaiKuiz2);
         System.out.println("UAS =" + nilaiUas2);
         System.out.println("Tugas =" + nilaiTugas2);
-        System.out.println("Nilai AKhir =" + nilaiAkhir2);
+        System.out.println("Nilai Akhir =" + nilaiAkhir2);
         System.out.println("Nilai Huruf =" + nilaiHuruf2);
         System.out.println("-------------------------------");
         System.out.println("Rata Rata Nilai AKhir =" + rataRataNilaiAkhir);
         System.out.println("Status Semester =" + statusSemester);
 
-
+        sc.close();
     }
 
 }
